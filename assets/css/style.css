@@ -1,3 +1,8 @@
+body{
+	font-family: 'Dosis', sans-serif;
+	background-color: rgb(238, 204, 255);
+}
+
 .background-img{
 	position:fixed;
 	margin:0 auto;
@@ -8,14 +13,98 @@
 	z-index:-10;
 }
 
-#topbar{
-	position:relative;
+#text-logo{
+	position:fixed;
 	margin:0 auto;
-	width:100%;
-	height:60px;
-	left:0px;
-	top:0px;
-	background-color:blue;
+	top:75px;
+	left:430px;
+	background-color: rgba(77, 121, 255, 0.7);
+	padding:15px;
+	padding-right:30px;
+	border-radius:25px;
+	font-size: 150px;
+	letter-spacing: 10px;
+}
+
+#text-box{
+	float:right;
+	margin-left:30px;
+	width:330px;
+	font-weight:bold;	
+	color:white;
+	background-color:rgba(221, 153, 255, 1.0);
+	border-radius:20px;
+	text-align:center;
+	letter-spacing: 20px;
+}
+
+#subtext{
+	text-align:center;
+	margin-top:42%;
+	font-size:80px;
+	color:white;
+	font-weight:bold;
+	background-color:rgba(221, 153, 255, 0.6);
+	border-radius:20px;
+	letter-spacing:10px;
+}
+
+.icon{
+	position:relative;
+	display: inline-block;
+	margin-top:10px;
+	width:50px;
+	height:50px;
+}
+
+#bigmapicon{
+	position:fixed;
+	width:150px;
+	height:150px;
+	bottom:150px;
+	left:150px;
+	transition: 0.5s;
+}
+
+#bigmapicon:hover {
+	width:170px;
+	height:170px;
+}
+
+
+#bigthesicon{
+	position:fixed;
+	width:150px;
+	height:150px;
+	bottom:150px;
+	right:150px;
+	transition: 0.5s;
+}
+
+#bigthesicon:hover {
+	width:170px;
+	height:170px;
+}
+
+#topbar{
+	position:absolute;
+	margin:0 auto;
+	width:1650px;
+	height:70px;
+	left:-1px;
+	top:-1px;
+	background-color:rgb(153, 179, 255);
 	z-index:10;
 }
 
+#mapicon{
+	left:13%;
+}
+
+#boxicon{
+	left:43%;
+}
+
+#thesicon{
+	left:73%;
+}
