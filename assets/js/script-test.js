@@ -7,8 +7,8 @@ $(document).ready(function() {
 	var d = document.getElementById('down-audio');
 
 	//hover effect plays audio elements
-	$('.up').hover(function(){u.play();}, 
-		(function(){u.pause();}));
+	$('.up').hover(function(){u.animate({volume: 1.0},1);u.play();}, 
+		(function(){u.animate({volume: 0.0},1);}));
 
 	$('.left').hover(function(){l.play();},
 		(function(){l.pause();}));

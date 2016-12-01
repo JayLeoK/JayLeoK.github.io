@@ -152,7 +152,7 @@ body{
 	
 	border-style:solid;
 	border-width:2px;
-	border-color:red;
+	border-color:blue;
 
 	position:relative;
 	margin:20px auto;
@@ -172,10 +172,12 @@ body{
 	width:450px;
 	height:450px;
 	background-color:white;
-	color: white;
+	color: black;
+	font-style:bold;
 	position:relative;
 	margin: 0 auto;
 	font-size:18px;
+	transition:0.3s;
 }
 
 .element{
@@ -184,34 +186,33 @@ body{
 	padding-top:80px;
 	padding-bottom:40px;
 	border-radius:10px;
-	font-style:bold;
 	transition:0.5s;
 }
 
 #up{
 	position:absolute;
 	left:150px;
-	background-color:purple;
+	background-color:rgba(134, 45, 134, 0.5);
 }
 
 #left{
 	position:absolute;
-	background-color:blue;
-	top:150px;
+	background-color:rgba(0, 57, 230, 0.5);
+	bottom:150px;
 }
 
 #right{
 	position:absolute;
-	background-color:red;
+	background-color:rgba(204, 0, 0, 0.5);
 	right:0px;
 	top:150px;
 }
 
 #down{
 	position:absolute;
-	background-color:green;
+	background-color:rgba(0, 102, 0, 0.5);
 	bottom:0px;
-	left:150px;
+	right:150px;
 }
 
 #reset-button{
@@ -224,4 +225,15 @@ body{
 	color:black;
 	font-style:bold;
 	margin:23px auto;
+}
+
+.select{
+	cursor:pointer;
+	position:relative;
+	width:200px;
+	font-size:125%;
+	padding-bottom:60px;
+	padding-top:100px;
+	opacity:0.8;
+	z-index:100;
 }
