@@ -1,4 +1,6 @@
 body{
+	margin:0;
+	background-position: center;
 	font-family: 'Dosis', sans-serif;
 	background-color: rgb(238, 204, 255);
 }
@@ -97,14 +99,129 @@ body{
 	z-index:10;
 }
 
-#mapicon{
-	left:13%;
+#mapicon{left:13%;}
+#boxicon{left:43%;}
+#thesicon{left:73%;}
+
+#mapper-container{
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width:1500;
+	height:600;
+	top:90px;
+	border-width:10px;
+	border-style:solid;
+	border-color:rgb(153, 179, 255);
+	background-color:white;
 }
 
-#boxicon{
-	left:43%;
+#helper-text{
+	width:40%;
+	display:block;
 }
 
-#thesicon{
-	left:73%;
+#tutorial{
+	position:relative;
+	top:30px;
+	left:450px;
+	padding:15px;
+	text-align:center;	
+	font-size:25px;
+	background-color:rgb(204, 204, 204);
+	z-index: 0;
+}
+
+#start{
+	position:absolute;
+	text-align:center;	
+	margin:0 auto;
+	z-index:10;
+	font-size:40px;
+	font-weight:bold;
+	left:37%;
+	display:none;
+	bottom:20px;
+}
+
+#mapper{
+	display:none;
+	width:700px;
+	height:500px;
+	
+	border-style:solid;
+	border-width:2px;
+	border-color:red;
+
+	position:relative;
+	margin:20px auto;
+}
+
+#mapper-text{
+	width:100%;
+	font-size:20px;
+	font-style:bold;
+	text-align:center;
+	color:black;
+	position:relative;
+	margin:5px auto;
+}
+
+#elements{
+	width:450px;
+	height:450px;
+	background-color:white;
+	color: white;
+	position:relative;
+	margin: 0 auto;
+	font-size:18px;
+}
+
+.element{
+	width:150px;
+	text-align:center;
+	padding-top:80px;
+	padding-bottom:40px;
+	border-radius:10px;
+	font-style:bold;
+	transition:0.5s;
+}
+
+#up{
+	position:absolute;
+	left:150px;
+	background-color:purple;
+}
+
+#left{
+	position:absolute;
+	background-color:blue;
+	top:150px;
+}
+
+#right{
+	position:absolute;
+	background-color:red;
+	right:0px;
+	top:150px;
+}
+
+#down{
+	position:absolute;
+	background-color:green;
+	bottom:0px;
+	left:150px;
+}
+
+#reset-button{
+	width:150px;
+	background-color:gray;
+	padding:10px;
+	position:relative;
+	text-align:center;
+	border-radius:10px;
+	color:black;
+	font-style:bold;
+	margin:23px auto;
 }
