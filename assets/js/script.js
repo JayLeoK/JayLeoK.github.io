@@ -50,7 +50,7 @@ $(document).ready(function() {
 			alert("You've chosen " + filter +" roots and Mechanical style. It's LIT!");	
 			reset();
 		}else{
-			$('#elements').css('background-color','rgba(134, 45, 134, 0.5)');
+			$('#mapper').css('background-color','rgba(134, 45, 134, 0.5)');
 			filter = "Mechanical";
 			u = document.getElementById('up-up-audio');
 			r = document.getElementById('up-right-audio');
@@ -64,7 +64,7 @@ $(document).ready(function() {
 			alert("You've chosen " + filter +" roots and Atmospheric/Dense style. Cool vibes...");	
 			reset();
 		}else{
-			$('#elements').css('background-color','rgba(0, 57, 230, 0.5)');
+			$('#mapper').css('background-color','rgba(0, 57, 230, 0.5)');
 			filter = "Atmospheric/Dense";
 			u = document.getElementById('left-up-audio');
 			r = document.getElementById('left-right-audio');
@@ -78,7 +78,7 @@ $(document).ready(function() {
 			alert("You've chosen " + filter +" roots and Bouncy/Spiky style. Get up and dance!");	
 			reset();
 		}else{
-			$('#elements').css('background-color','rgba(204, 0, 0, 0.5)');
+			$('#mapper').css('background-color','rgba(204, 0, 0, 0.5)');
 			filter = "Bouncy/Spiky";
 			u = document.getElementById('right-up-audio');
 			r = document.getElementById('right-right-audio');
@@ -92,7 +92,7 @@ $(document).ready(function() {
 			alert("You've chosen " + filter +" roots and Organic style. Classic stuff!");	
 			reset();
 		}else{
-			$('#elements').css('background-color','rgba(0, 102, 0, 0.5)');
+			$('#mapper').css('background-color','rgba(0, 102, 0, 0.5)');
 			filter = "Organic";
 			u = document.getElementById('down-up-audio');
 			r = document.getElementById('down-right-audio');
@@ -106,7 +106,7 @@ $(document).ready(function() {
 		l = document.getElementById('left-audio');
 		r = document.getElementById('right-audio');
 		d = document.getElementById('down-audio');
-		$('#elements').css('background-color','white');
+		$('#mapper').css('background-color','white');
 		filter = "";
 	};
 	$('#reset-button').click(function(){
