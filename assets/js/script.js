@@ -46,6 +46,7 @@ $(document).ready(function() {
 
 	$('#up').click(function(){
 		u.pause();
+
 		if(filter){
 			alert("You've chosen " + filter +" roots and Mechanical style. It's LIT!");	
 			reset();
@@ -109,8 +110,14 @@ $(document).ready(function() {
 		$('#mapper').css('background-color','white');
 		filter = "";
 	};
+	
 	$('#reset-button').click(function(){
 		reset();
 	})
 
+	$('#search-button').click(function(){
+		if($('#searchbar').val()==("The Next Episode")){
+			window.open('thesaurus-result1.html');
+		}
+	})
 });
